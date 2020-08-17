@@ -1,0 +1,10 @@
+{
+  "title": "TMT Wordpress Dev Docs",
+  "url": "",
+  "logo": {
+    "light": "/logo-light.svg",
+    "dark": "/logo-dark.svg"
+  },
+  "github": "tmtde",
+  "twitter": "tmtde"
+}
