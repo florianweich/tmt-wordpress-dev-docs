@@ -1,27 +1,25 @@
 ---
-title: Introduction
+title: Einleitung
 description: ''
 position: 1
-category: ''
+category: Übersicht
 features:
-  - Feature 1
-  - Feature 2
-  - Feature 3
+  - lokale Dev-Umgebung auf Docker-Basis
+  - Visual Studio Code-Unterstützung mit Xdebug-Integration
+  - Build-Prozess mit Laravel Mix (JavaScript/TypeScript, SCSS, Vue.js, etc.)
+  - Integration von Advanced Custom Fields PRO
+  - Vue.js + WP REST API
+  - Impreza-freundliche Anwendung
 ---
 
-<img src="/preview.png" class="light-img" />
-<img src="/preview-dark.png" class="dark-img" />
+In diesem Dokument wird der Entwicklungs-Prozess für Wordpress-Plugins mit Custom Post Types und [Adanced Custom Fields PRO](https://www.advancedcustomfields.com/)-Integration dokumentiert.
 
-[Module]() for [NuxtJS](https://nuxtjs.org).
+Die Vorgehensweise ist dabei vor allem für die Verwendung innerhalb einer [Impreza](http://impreza-landing.us-themes.com/)-Installation optimiert. Dies ist ein Wordpress-Theme, das standardmäßig bei Kundenprojekten von [TMT](https://www.tmt.de/) zum Einsatz kommt.
 
-<alert type="success">
-
-Your documentation has been created successfully!
-
-</alert>
+Client-seitige JS-Erweiterungen der statischen Ausgaben werden dabei vor allem mit [Vue.js](https://vuejs.org/) realisiert. Kleinere Skripte sollten nach Möglichkeit immer in [TypeScript](https://www.typescriptlang.org/) geschrieben werden.
 
 ## Features
 
 <list :items="features"></list>
 
-<p class="flex items-center">Enjoy light and dark mode:&nbsp;<app-color-switcher class="inline-flex ml-2"></app-color-switcher></p>
+Im nächsten Kapitel folgt das Setup der lokalen Entwicklungs-Umgebung.
