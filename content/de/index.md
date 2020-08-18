@@ -16,7 +16,7 @@ In diesem Dokument wird der Entwicklungs-Prozess für Wordpress-Plugins mit Cust
 
 Die Vorgehensweise ist dabei vor allem für die Verwendung innerhalb einer [Impreza](http://impreza-landing.us-themes.com/)-Installation optimiert. Dies ist ein Wordpress-Theme, das standardmäßig bei Kundenprojekten von [TMT](https://www.tmt.de/) zum Einsatz kommt.
 
-Client-seitige JS-Erweiterungen der statischen Ausgaben werden dabei vor allem mit [Vue.js](https://vuejs.org/) realisiert. Kleinere Skripte sollten nach Möglichkeit immer in [TypeScript](https://www.typescriptlang.org/) geschrieben werden.
+Client-seitige JS-Erweiterungen der statischen Ausgaben werden dabei vor allem mit [Vue.js](https://vuejs.org/) realisiert. Kleinere Skripte sind nach Möglichkeit immer in [TypeScript](https://www.typescriptlang.org/) zu schreiben.
 
 ## Features
 
