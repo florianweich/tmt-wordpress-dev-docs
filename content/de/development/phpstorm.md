@@ -3,6 +3,7 @@ title: PhpStorm
 description: ''
 position: 13
 category: Dev-Umgebung
+badge: WIP
 ---
 
-_Sucht einen Autor. **Freiwillige vor!**_
+<alert type="info">Dieser Eintrag sucht einen Autor 🧑‍💻. **Freiwillige vor!** </alert>
