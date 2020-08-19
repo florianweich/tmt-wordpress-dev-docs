@@ -22,20 +22,24 @@ Laravel Mix entstammt eigentlich dem Laravel-Projekt, kann aber auch _standalone
 
 Im Projekt-Root sollte ein Ordner `src` angelegt werden, der die unkompilierten Original-Dateien (JavaScript, SCSS, etc.) enhält.
 
-Dieser enthält wiederum Unterordner mit Assets für den Admin- sowie den Public-Bereich.
+Dieser enthält wiederum Unterordner mit Assets für den Admin- sowie den Public-Bereich[^1].
+
+[^1]: Die gezeigte Projektstruktur ist stark vereinfacht.
 
 > s. auch [Projektstruktur](/wordpress/plugin#projektstruktur).
 
 ```bash
 src/
-  admin/
-    css/
-      plugin-name-admin.scss
-    js/
-      plugin-name-admin.ts
-  public/
-    js/
-      plugin-name-public.js
+├── admin/
+│   ├── css/
+│   │   └── plugin-name-admin.css
+│   └── js/
+│       └── plugin-name-admin.js
+└── public/
+    ├── css/
+    │   └── plugin-name-public.css
+    └── js/
+        └── plugin-name-public.js
 ```
 
 ## Konfiguration
@@ -52,14 +56,14 @@ const mix = require('laravel-mix');
 mix
   .ts('src/public/js/plugin-name-public.ts', 'public/js/')
   .sass('src/public/css/plugin-name-public.scss', 'public/css/')
-  .js('src/admin/js/plugin-name-public.js', 'admin/js/');
+  .js('src/admin/js/plugin-name-admin.js', 'admin/js/');
 ```
 
 Weitere nützliche Funktionen sind beispielsweise:
 
 - Extrahieren von Vendor-Bibliotheken bzw. Code Splitting
-- Kopieren von Dateien
 - Zusammenfügen von Dateien und Minifikation
+- Kopieren von Dateien
 - OS-Benachrichtigungen
 
 <alert type="info">**Info!** Bei der Verwendung von TypeScript muss zusätzlich auch eine `tsconfig.json` Konfigurationsdatei angelegt werden.</alert>

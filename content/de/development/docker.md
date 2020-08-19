@@ -63,9 +63,9 @@ volumes:
 Die Ordnerstruktur sieht dann wie folgt aus:
 
 ```bash
-docker-compose.yml
-uploads.ini
-wp-content/
+├── docker-compose.yml
+├── uploads.ini
+└── wp-content/
 ```
 
 ### Basis-Image
@@ -97,3 +97,5 @@ max_execution_time = 600
 Das Basis-Image `wordpress:latest` verwendet üblicherweise die jeweils neuste PHP-Version. Idealerweise sollten aber natürlich die Entwicklungs-Umgebung sowie das Produktiv-System gleiche Vorraussetzungen bieten.
 
 Es empfiehlt sich daher (gerade für umfangreichere Projekte) ein eigenes Dockerfile mit einer konkreten PHP-Version zu erstellen. Gleiches gilt natürlich für die Art/Version der verwendeten Datenbank.
+
+<alert type="info">**Info!** Unter dem Pfad `/wp-admin/site-health.php?tab=debug` lassen sich im Bereich `Server` und `Datenbank` schnell die installierten Versionen auslesen.</alert>
