@@ -12,4 +12,7 @@ export default theme({
     ],
     defaultLocale: 'de',
   },
+  content: {
+    liveEdit: false,
+  },
 });

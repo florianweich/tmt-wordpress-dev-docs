@@ -1,6 +1,6 @@
 ---
-title: Veröffentlichung
+title: Assets
 description: ''
-position: 118
+position: 117
 category: Wordpress
 ---
