@@ -26,7 +26,7 @@ Dieser enthält wiederum Unterordner mit Assets für den Admin- sowie den Public
 
 [^1]: Die gezeigte Projektstruktur ist stark vereinfacht.
 
-> s. auch [Projektstruktur](/wordpress/plugin#projektstruktur).
+> s. auch [Projekt-Struktur](/wordpress/plugin#projekt-struktur).
 
 ```bash
 src/
