@@ -15,7 +15,7 @@ Mit folgendem Befehl lässt sich der aktuelle `HEAD`-Commit in eine zip-Datei pa
 git archive -o wp-plugin-name.zip HEAD
 ```
 
-<alert type="info">**Info!** Die vorhandenen `.gitignore`-Regeln werden dabei beachtet. Weitere Dateien und Ordner lassen sich mit Hilfe einer [`.gitattributes`](#gitattributes)-Datei vom "Archivieren" ausschließen.</alert>
+<alert type="info">**Info!** Die vorhandenen `.gitignore`-Regeln werden dabei beachtet. Weitere Dateien und Ordner lassen sich mit Hilfe von `Git-Attributen` vom "Archivieren" ausschließen (s. [unten](#gitattributes)).</alert>
 
 ### npm-Skript
 
