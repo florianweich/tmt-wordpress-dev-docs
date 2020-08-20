@@ -23,14 +23,16 @@ Anschließend wird ein Impreza-Grid für den `current_query` verwendet, um die a
 
 #### 2. Shortcode registrieren
 
-Damit der Shortcode auch ausgeführt wird, muss er in Wordpress registriert werden. Gleichzeitig teilt man WP mit, welche Funktion zum Rendern des Shortcodes verantwortlich ist.
+Damit der Shortcode auch ausgeführt wird, muss er in Wordpress registriert werden. Gleichzeitig teilt man WP mit, welche Funktion zum Rendern des Shortcodes verantwortlich ist:
 
 ```php[includes/class-wp-plugin-name.php]
-/* Render the custom search form */
-add_shortcode('custom_search', [
-  $plugin_public,
-  'render_shortcode_custom_search',
-]);
+private function define_public_hooks() {
+  /* Render the custom search form */
+  add_shortcode('custom_search', [
+    $plugin_public,
+    'render_shortcode_custom_search',
+  ]);
+}
 ```
 
 Hier wird der also Shortcode `[custom_search]` registriert, der beim Rendern die Funktion `render_shortcode_custom_search()` in der `Public`-Klasseninstanz `$plugin_public` aufruft.
