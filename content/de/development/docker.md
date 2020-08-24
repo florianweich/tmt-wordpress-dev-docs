@@ -15,6 +15,8 @@ Für die lokale Entwicklung und dem Betrieb mehrerer paralleler Wordpress-Instal
 
 ## docker-compose Stack
 
+<alert type="info">**Info!** Nachfolgende Infos gelten erst Mal vorübergehend. Mittelfristig ist geplant die Produktiv-Systeme bei TMT mit einem eigenen Docker-Image nachzubilden.</alert>
+
 Der einfachste Wordpress-Stack erfordert ein Wordpress-Image (z.B. WP + Apache) sowie ein Datenbank-Image (z.B. MariaDB).  
 Optional dazu kann ein Datenbank-Verwaltungstool (z.B. Adminer) hilfreich sein, einen schnellen Blick in die Datenbank zu werden.
 
