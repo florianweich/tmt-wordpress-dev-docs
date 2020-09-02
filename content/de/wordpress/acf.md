@@ -51,3 +51,11 @@ Im Code selbst definiert man lediglich die Position und Metadaten der Options-Se
 Gegenüber der Standard-Methode von Wordpress erspart man sich so einige Schritte (z.B. Aufbau des Eingabeformulars, Validierung, etc.).
 
 > Mehr dazu in der [Dokumentation](https://www.advancedcustomfields.com/resources/options-page/).
+
+## Sinnvolle Inhalte
+
+Nicht immer ist es sinnvoll ACF bzw. Benutzerdefinierte Felder für alle Inhalte zu verwenden.
+
+Standard-Eingabemöglichkeiten wie beispielsweise der Titel oder der Haupttext eines [CPTs](/wordpress/cpt) sollten immer bevorzugt werden. Gleiches gilt für das Beitragsbild, sollte dies zu den geplanten Inhalten passen.
+
+<alert type="info">**Info!** Titel, Beitragstext und Beitragsbild finden beim WP-Plugin [Yoast SEO](https://yoast.com/) standardmäßig Beachtung und werden automatisch in SEO Metatags ausgegeben.</alert>

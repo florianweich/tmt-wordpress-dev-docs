@@ -77,6 +77,8 @@ public function alter_main_query($query) {
   }
 
   $query->set('meta_query', $meta_query);
+
+  return $query;
 }
 ```
 

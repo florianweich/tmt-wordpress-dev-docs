@@ -36,3 +36,34 @@ Hat man eine Archiv-Ausgabe beispielsweise mit Impreza erstellt, lassen sich üb
 Dazu erweitert oder verändert man einfach die Parameter des globalen `WP_Query`-Objekts im entsprechenden Hook.
 
 > Mehr zur Manipulation von [Queries](/wordpress/queries).
+
+## Impreza-Elemente verwenden
+
+Immer mal wieder möchte man Impreza-eigene Elemente bei der Ausgabe nutzen. Beispielsweise benötigt man einen Button innerhalb eines Shortcodes, der den Look and Feel von Impreza haben soll.
+
+<alert type="warning">**Achtung!** Das "Nachbauen" von solchen Elementen in HTML und CSS ist meist fehleranfällig und wenig zukunftssicher, da sich CSS-Klassen oder Strukturen mit jedem Update verändern können.</alert>
+
+> Everything is a shortcode!
+
+Auftritt Impreza als "Render-Sklave":
+
+Da das Theme den [WBBakery Page Builder](https://wpbakery.com/) verwendet, sind diese eigenen Elemente auch "nur" Shortcodes und können wiederum mit Namen und Parametern aufgerufen werden. Die interne Darstellung überlassen wir dann dem Theme.
+
+### Beispiel: Button
+
+Folgendes Code-Beispiel rendert einen Impreza-Button:
+
+```php
+do_shortcode(
+  '[us_btn
+    el_class="my-custom-class"
+    label="My Button Title"
+    link="' . get_the_permalink() . '"
+    icon="fas|fa-home"
+  ]',
+);
+```
+
+Das Resultat ist ein Button mit einer zusätzlichen CSS-Klasse `.my-custom-class`, dem Titel `"My Button Title"` und sogar einem [Font Awesome](https://fontawesome.com/)-Icon.
+
+<alert type="info">**Info!** Will man wissen, wie die internen Shortcodes aufgebaut sind, wirft man am besten einen Blick in die "Classic"-Ansicht des [WBBakery Page Builder](https://wpbakery.com/). Im Text enthalten sind dort die rohen Shortcodes.</alert>

@@ -34,4 +34,6 @@ Gerade im Anfangsstadium der Entwicklung ist es relativ praktisch alle von Wordp
 
 Am Ende lassen sich für die so erstellten CPTs und Taxonomien PHP-Code erzeugen, der wiederum direkt ins Plugin aufgenommen werden kann. Das Plugin CPT UI selbst sollte im Produktiv-System _nicht_ aktiviert sein müssen!
 
+<alert type="warning">**Achtung!** Die Text Domain sollte entsprechend dem Plugin angepasst werden. Beim Export wird die aktuelle Text Domain des aktivierten Themes verwendet (z.B. `"us"` bei Impreza).</alert>
+
 <alert type="info">**Info!** Der PHP-Code für Custom Post Types und Taxonomien gehört in die Datei `/admin/class-wp-plugin-name-admin.php` (s. [WP-Plugin](/wordpress/plugin)).</alert>

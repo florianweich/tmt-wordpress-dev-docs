@@ -32,14 +32,14 @@ Dieser enthält wiederum Unterordner mit Assets für den Admin- sowie den Public
 src/
 ├── admin/
 │   ├── css/
-│   │   └── plugin-name-admin.css
+│   │   └── plugin-name-admin.scss
 │   └── js/
 │       └── plugin-name-admin.js
 └── public/
     ├── css/
-    │   └── plugin-name-public.css
+    │   └── plugin-name-public.scss
     └── js/
-        └── plugin-name-public.js
+        └── plugin-name-public.ts
 ```
 
 ## Konfiguration
