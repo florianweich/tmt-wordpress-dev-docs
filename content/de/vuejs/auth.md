@@ -1,7 +1,7 @@
 ---
 title: Authentifizierung
 description: ''
-position: 1113
+position: 1114
 category: Vue.js
 badge: WIP
 ---

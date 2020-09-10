@@ -1,7 +1,7 @@
 ---
 title: (Re)usable Components
 description: ''
-position: 1114
+position: 1115
 category: Vue.js
 badge: WIP
 components:

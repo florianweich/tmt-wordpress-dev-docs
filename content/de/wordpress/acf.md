@@ -43,6 +43,8 @@ Die ACF-Felder sind standardmäßig nicht in der Wordpress REST API integriert. 
 
 > Eine Dokumentation der Erweiterungs- und Anpassungsmöglichkeiten befindet sich auf [GitHub](https://github.com/airesvsg/acf-to-rest-api/).
 
+<alert type="warning">**Achtung!** Die WP REST API sollte generell **deaktiviert** und nur einzelne Endpunkte aktiviert werden, die tatsächlich öffentlich verfügbar sein sollen! Unterstützung dafür bietet das Plugin [Disable REST API](https://de.wordpress.org/plugins/disable-json-api/).</alert>
+
 ## Options Pages
 
 Eine sehr praktische Funktion der ACF PRO-Version ist das Anlegen von Einstellungsseiten.
