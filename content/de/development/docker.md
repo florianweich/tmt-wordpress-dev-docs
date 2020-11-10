@@ -94,6 +94,22 @@ post_max_size = 128M
 max_execution_time = 600
 ```
 
+### Cronjobs
+
+WP-Cronjobs laufen innerhalb des Docker-Containers nicht. Daher ist die Verwendung des alternativen Cron-Modus von Wordpress empfehlenswert. Dieser wird in der `wp-config.php` aktiviert und kann somit auch über die `WORDPRESS_CONFIG_EXTRA` Umgebungs-Variable im `docker-compose`-File konfiguriert werden:
+
+```docker[docker-compose.yml]
+WORDPRESS_CONFIG_EXTRA: |
+  define( 'ALTERNATE_WP_CRON', true );
+  define( 'DISABLE_WP_CRON', true );
+```
+
+Anschließend müssen dann aber die Cronjobs durch Aufruf der `wp-cron.php` manuell gestartet werden. Dies kann natürlich auch via "echtem" Cronjob von extern via HTTP-Request erfolgen:
+
+```sh
+curl http://localhost:8000/wp-cron.php
+```
+
 ## Eigenes Dockerfile
 
 Das Basis-Image `wordpress:latest` verwendet üblicherweise die jeweils neuste PHP-Version. Idealerweise sollten aber natürlich die Entwicklungs-Umgebung sowie das Produktiv-System gleiche Vorraussetzungen bieten.
